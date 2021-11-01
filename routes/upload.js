@@ -3,12 +3,13 @@ const router = express.Router();
 const bodyParser = require('body-parser')
 const multer = require('multer');
 const upload = multer();
+const cors = require('cors');
 const { saveToIpfsWithFilename } = require('../functions/upload_file');
 
 
 router.use(bodyParser.json()) // for parsing application/json
 router.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
-
+router.use(cors())
 
 // upload file
 router.post('/upload', upload.array('file'), async (req, res) => {
