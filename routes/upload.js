@@ -14,8 +14,8 @@ router.use(bodyParser.urlencoded({ extended: true })) // for parsing application
 router.post('/upload', upload.array('file'), async (req, res) => {
     const file_buffer = req.files[0].buffer;
     const file_name = req.files[0].originalname;
-    response.header("Access-Control-Allow-Origin", "*");
-    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With,Content-Type, Accept");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With,Content-Type, Accept");
     saveToIpfsWithFilename(file_buffer, file_name, res);
 
 
