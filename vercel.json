@@ -6,7 +6,6 @@
             "use": "@vercel/node"
         }
     ],
-    {
   "headers": [
     {
       "source": "/.*",
@@ -27,4 +26,4 @@
     }
   ]
 }
-}
+
