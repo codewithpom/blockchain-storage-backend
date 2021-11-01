@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.17.1",
     "ipfs-api": "^26.1.2",
     "ipfs-http-client": "^53.0.1",
+    "micro-cors": "^0.1.1",
     "multer": "^1.4.3"
   }
 }
