@@ -15,7 +15,6 @@ router.post('/upload', upload.array('file'), async (req, res) => {
     const file_buffer = req.files[0].buffer;
     const file_name = req.files[0].originalname;
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With,Content-Type, Accept");
     saveToIpfsWithFilename(file_buffer, file_name, res);
 
 
