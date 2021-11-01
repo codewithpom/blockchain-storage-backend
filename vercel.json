@@ -5,11 +5,6 @@
             "src": "./index.js",
             "use": "@vercel/node"
         }
-<<<<<<< HEAD
-    ]
-}
-
-=======
     ],
     "routes": [
         {
@@ -18,4 +13,3 @@
         }
     ]
 }
->>>>>>> parent of 702c5fc (CORS support)
